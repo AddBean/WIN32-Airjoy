@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B9F123C-433D-4623-A9D0-55758546E61E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AirJoy</RootNamespace>
+    <AssemblyName>AirJoy</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>C:\Users\Administrator\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>5FF098A44EE9712481EC47484D5E7BDBB2A8883D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>AirJoy_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Controls, Version=2.0.0.0, Culture=neutral, PublicKeyToken=a8ac264d1dc6b9d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.0.0.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="CSkin, Version=16.1.14.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\CSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="DMSkin, Version=0.3.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\DMSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.4.5.0.0.Fakes">
+      <HintPath>FakesAssemblies\Newtonsoft.Json.4.5.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="ThoughtWorks.QRCode, Version=1.0.3990.25764, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrameWork\Cmd.cs" />
+    <Compile Include="FrameWork\Common.cs" />
+    <Compile Include="FrameWork\Config.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameWork\QRCode.cs" />
+    <Compile Include="FrameWork\QueuesTask\Queues.cs" />
+    <Compile Include="FrameWork\QueuesTask\StartTaskThread.cs" />
+    <Compile Include="FrameWork\QueuesTask\TaskThread.cs" />
+    <Compile Include="FrameWork\SocketUdpServer.cs" />
+    <Compile Include="FrameWork\Utils.cs" />
+    <Compile Include="main\MainFrom.UiHandler.cs" />
+    <Compile Include="PhoneVideoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhoneVideoForm.Designer.cs">
+      <DependentUpon>PhoneVideoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RadioList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServiceLogic\boolean.cs" />
+    <Compile Include="ServiceLogic\Const.cs" />
+    <Compile Include="ServiceLogic\Draw.cs" />
+    <Compile Include="FrameWork\Log.cs" />
+    <Compile Include="ServiceLogic\GetRandomPort.cs" />
+    <Compile Include="ServiceLogic\KeyBoard.cs" />
+    <Compile Include="ServiceLogic\Logic.cs" />
+    <Compile Include="ServiceLogic\model\CardModel.cs" />
+    <Compile Include="ServiceLogic\model\ModelNetworkCard.cs" />
+    <Compile Include="ServiceLogic\PCControl.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FrameWork\SocketServer.cs" />
+    <Compile Include="ServiceLogic\PC\util\FileUtil.cs" />
+    <Compile Include="ServiceLogic\TcpServer.cs" />
+    <Compile Include="ServiceLogic\UserModel.cs" />
+    <Compile Include="SkinForm.cs" />
+    <Compile Include="WebInf.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhoneVideoForm.resx">
+      <DependentUpon>PhoneVideoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="AirJoy_TemporaryKey.pfx" />
+    <Fakes Include="Fakes\Newtonsoft.Json.fakes" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TakePhoto.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAMERA1.WAV" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAMERA2.WAV" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="ThoughtWorks.QRCode">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnStopNorml.bmp" />
+    <None Include="Resources\btnStopNorml.png" />
+    <None Include="Resources\btnStopDown.png" />
+    <Content Include="Resources\icon.ico" />
+    <Compile Include="ServiceLogic\PC\model\Disk.cs" />
+    <Compile Include="ServiceLogic\PC\model\FileLog.cs" />
+    <Compile Include="ServiceLogic\PC\model\PcFile.cs" />
+    <None Include="Resources\video_bg.png" />
+    <None Include="Resources\camera_bg.png" />
+    <None Include="Resources\bg.png" />
+    <None Include="Resources\pictureBox1.BackgroundImage.png" />
+    <None Include="Resources\btnPlay.NormlBack.png" />
+    <None Include="Resources\btnMuliShot.png" />
+    <None Include="Resources\btnOpenFile.png" />
+    <None Include="Resources\btnShot.png" />
+    <None Include="Resources\skinTabControl1.PageHover.png" />
+    <None Include="Resources\skinTabControl1.PageDown.png" />
+    <None Include="Resources\skinButton2.DownBack.png" />
+    <None Include="Resources\skinPanel4.BackgroundImage.png" />
+    <None Include="Resources\mStatusPicBox.BackgroundImage.png" />
+    <None Include="Resources\pci_card.png" />
+    <None Include="Resources\inf_error_bg.png" />
+    <None Include="Resources\inf_success.png" />
+    <None Include="Resources\inf_success_bg.png" />
+    <None Include="Resources\inf_error.png" />
+    <None Include="Resources\mPhoneTimeBtn.NormlBack.png" />
+    <None Include="Resources\icon_minized.png" />
+    <None Include="Resources\icon_maxized.png" />
+    <Content Include="Resources\switch_off.png" />
+    <None Include="Resources\switch_on1.png" />
+    <None Include="Resources\switch_off1.png" />
+    <Content Include="Resources\switch_on.png" />
+    <None Include="Resources\takephoto.png" />
+    <None Include="Resources\noimg.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
